@@ -15,9 +15,6 @@ amount_found = len(found)
 
 if amount_found != 0:
 	for (x, y, width, height) in found:
-		
-		# We draw a green rectangle around
-		# every recognized sign
 		cv2.rectangle(img_rgb, (x, y),
 					(x + height, y + width),
 					(0, 255, 0), 5)
